@@ -1,7 +1,14 @@
+import { BrowserRouter, Route, Routes } from "react-router";
+import Home from "./pages/Home";
+
 function App() {
   return (
     <>
-      <h1>Vite + React</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
